@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Boi's Game Galley!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #0073e6, #004080);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #004080, #001f40);
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin: 0 10px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #ffcc00;
+            white-space: nowrap;
+        }
+        header img {
+            height: 60px;
+            width: auto;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px auto;
+            max-width: 1200px;
+        }
+        .card {
+            background: linear-gradient(to bottom, #00284d, #001730);
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .card h3 {
+            margin: 15px 0 10px 0;
+            font-size: 1.5em;
+            color: #ffcc00;
+        }
+        .card p {
+            font-size: 1em;
+            color: #cccccc;
+            margin: 10px 0;
+        }
+        .card button {
+            background: linear-gradient(to bottom, #28a745, #19692c);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .card button:hover {
+            background: linear-gradient(to bottom, #34d058, #22863a);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        #fullscreen {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            z-index: 9999;
+        }
+        #fullscreen iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        #fullscreen .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            z-index: 10000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        #fullscreen .close-btn:hover {
+            background: darkred;
+        }
+        .disclaimer {
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="dragonboi.gif" alt="Left Icon">
+        <h1>Dragon Boi's Game Galley!</h1>
+        <img src="dragonboi.gif" alt="Right Icon">
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="der.jpg" alt="Dave's Escape Room">
+            <h3>Dave's Escape Room</h3>
+            <p>Previously lost 2c Anniversary game!</p>
+            <button onclick="playGame('./web.i-gamer.net/appic/html5/2581/')">Play</button>
+        </div>
+
+        <div class="card">
+            <img src="evolve.jpg" alt="Evolve">
+            <h3>Evolve</h3>
+            <p>That one heavily clickbaited PvZ game with the anime girls.</p>
+            <button onclick="playGame('./ZombiesWeb/831/')">Play</button>
+        </div>
+
+        <div class="card">
+            <img src="bs.jpg" alt="Bad SpongeBob">
+            <h3>Bad SpongeBob</h3>
+            <p>Bad piggies. But with SpongeBob. how original!</p>
+            <button onclick="playSWF('./bob.swf')">Play</button>
+        </div>
+
+        <div class="card">
+            <img src="oe.jpg" alt="PvZOE">
+            <h3>PvZOE</h3>
+            <p>The one and only, PvZOE!</p>
+            <button onclick="playGame('./ruanzhu/pza/zijie/')">Play</button>
+        </div>
+
+        <div class="card">
+            <img src="icc.jpg" alt="Ice Cream Catapult">
+            <h3>Ice Cream Catapult</h3>
+            <p>Angry birds. But with ice cream.</p>
+            <button onclick="playSWF('./icc.swf')">Play</button>
+        </div>
+
+        <div class="card">
+            <img src="fvm.jpg" alt="Food vs Mouse (APP VERSION)">
+            <h3>Food vs Mouse (FLASH VERSION)</h3>
+            <p>Remember that grindy game from 2010? Well, it's not playable outside of China.<br> Now it is! Kinda. </p>
+            <button onclick="playSWF('./fvm.swf')">Play</button>
+        </div>
+
+        <div class="card">
+            <img src="cts2d.jpg" alt="Charlie2D">
+            <h3>Charlie2D</h3>
+            <p>Just Charlie the steak in flash and redrawn.</p>
+            <button onclick="playSWF('./cts2d.swf')">Play</button>
+        </div>
+
+        <div class="card">
+            <img src="oe.jpg" alt="PvZOE: v48">
+            <h3>PvZOE: v48</h3>
+            <p>One of the many leaked prototypes of PvZOE. May not fully work.</p>
+            <button onclick="playGame('./ruanzhu/pza/v48')">Play</button>
+        </div>
+
+        <div class="card">
+            <img src="oe.jpg" alt="PvZOE: Super Chomper Build">
+            <h3>PvZOE: Super Chomper Build</h3>
+            <p>The build of PvZOE with the "Big Mouth" level, pretty explanatory.</p>
+            <button onclick="playGame('./ruanzhu/pza/v4')">Play</button>
+        </div>
+		        <div class="card">
+            <img src="fvm.jpg" alt="Charlie2D">
+            <h3>FVM COCOS EDITION</h3>
+            <p>Just FVM remade in cocos2d.</p>
+            <button onclick="playGame('https://jw-h5cdn.4399iw.com/index.html?gameId=100071279')">Play</button>
+        </div>
+
+        <div class="card">
+            <img src="fvm.jpg" alt="PvZOE: v48">
+            <h3>FVM H5</h3>
+            <p>A weird knockoff of FVM..</p>
+            <button onclick="playGame('./FVM/fvmh')">Play</button>
+        </div>
+
+        <div class="card">
+            <img src="fvm.jpg" alt="FVM H5 Submarine">
+            <h3>FVM H5 Submarine</h3>
+            <p>Another weird knockoff of FVM.</p>
+            <button onclick="playGame('./FVM/fvmsh')">Play</button>
+        </div>
+		
+		<div class="card">
+            <img src="oe.jpg" alt="PvZOE: v48">
+            <h3>PvZOE: RECTIFY</h3>
+            <p>One of the many leaked builds of PvZOE. May not fully work.</p>
+            <button onclick="playGame('./ruanzhu/pza/v2')">Play</button>
+        </div>
+		
+		<div class="card">
+            <img src="sw.jpg" alt="PvZOE: v48">
+            <h3>Space War (NON-WORKING)</h3>
+            <p>An obscure pvz knockoff..</p>
+            <button onclick="playSWF('./ClientLoader.swf')">Play</button>
+        </div>
+    </div>
+
+    <div id="fullscreen">
+        <button class="close-btn" onclick="closeGame()">Close</button>
+        <iframe id="game-frame"></iframe>
+    </div>
+
+    <div class="disclaimer">
+        Refresh after each game is closed
+    </div>
+
+    <script>
+        function playGame(url) {
+            const fullscreenDiv = document.getElementById('fullscreen');
+            const gameFrame = document.getElementById('game-frame');
+            gameFrame.src = url + (url.endsWith('/') ? 'index.html' : '/index.html');
+            fullscreenDiv.style.display = 'block';
+        }
+
+        function playSWF(url) {
+            const fullscreenDiv = document.getElementById('fullscreen');
+            const gameFrame = document.getElementById('game-frame');
+            gameFrame.src = 'about:blank';
+            gameFrame.onload = () => {
+                const doc = gameFrame.contentDocument || gameFrame.contentWindow.document;
+                doc.open();
+                doc.write('<body></body>');
+                doc.close();
+
+                const rufflePlayer = document.createElement('object');
+                rufflePlayer.data = url;
+                rufflePlayer.type = 'application/x-shockwave-flash';
+                rufflePlayer.style.width = '100%';
+                rufflePlayer.style.height = '100%';
+
+                doc.body.appendChild(rufflePlayer);
+            };
+            fullscreenDiv.style.display = 'block';
+        }
+
+        function closeGame() {
+            const fullscreenDiv = document.getElementById('fullscreen');
+            const gameFrame = document.getElementById('game-frame');
+            gameFrame.src = '';
+            fullscreenDiv.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

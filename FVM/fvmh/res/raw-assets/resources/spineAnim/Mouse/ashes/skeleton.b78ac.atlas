@@ -1,0 +1,111 @@
+
+skeleton.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+laoshushaojiao1
+  rotate: false
+  xy: 497, 510
+  size: 254, 253
+  orig: 254, 253
+  offset: 0, 0
+  index: -1
+laoshushaojiao10
+  rotate: false
+  xy: 774, 761
+  size: 247, 260
+  orig: 247, 260
+  offset: 0, 0
+  index: -1
+laoshushaojiao11
+  rotate: false
+  xy: 254, 503
+  size: 241, 256
+  orig: 241, 256
+  offset: 0, 0
+  index: -1
+laoshushaojiao12
+  rotate: true
+  xy: 2, 2
+  size: 233, 246
+  orig: 233, 246
+  offset: 0, 0
+  index: -1
+laoshushaojiao13
+  rotate: true
+  xy: 250, 3
+  size: 232, 215
+  orig: 232, 215
+  offset: 0, 0
+  index: -1
+laoshushaojiao14
+  rotate: true
+  xy: 467, 18
+  size: 232, 215
+  orig: 232, 215
+  offset: 0, 0
+  index: -1
+laoshushaojiao15
+  rotate: true
+  xy: 253, 252
+  size: 245, 215
+  orig: 245, 215
+  offset: 0, 0
+  index: -1
+laoshushaojiao2
+  rotate: false
+  xy: 753, 506
+  size: 254, 253
+  orig: 254, 253
+  offset: 0, 0
+  index: -1
+laoshushaojiao3
+  rotate: false
+  xy: 497, 255
+  size: 254, 253
+  orig: 254, 253
+  offset: 0, 0
+  index: -1
+laoshushaojiao4
+  rotate: true
+  xy: 753, 253
+  size: 251, 253
+  orig: 251, 253
+  offset: 0, 0
+  index: -1
+laoshushaojiao5
+  rotate: false
+  xy: 258, 765
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+laoshushaojiao6
+  rotate: false
+  xy: 516, 765
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+laoshushaojiao7
+  rotate: false
+  xy: 2, 761
+  size: 254, 260
+  orig: 254, 260
+  offset: 0, 0
+  index: -1
+laoshushaojiao8
+  rotate: false
+  xy: 2, 499
+  size: 250, 260
+  orig: 250, 260
+  offset: 0, 0
+  index: -1
+laoshushaojiao9
+  rotate: false
+  xy: 2, 237
+  size: 249, 260
+  orig: 249, 260
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,4 @@
+ID,Name,NodeType,Layer,CollisionType,Speed,AttackType,
+0x12000001,通心粉子弹,Bullet,0,0x3001,10,1,
+0x12000002,火焰爆炸特效,Bullet,0,0x3001,0,3,
+0x12000003,主角子弹,Bullet,0,0x3001,10,1,

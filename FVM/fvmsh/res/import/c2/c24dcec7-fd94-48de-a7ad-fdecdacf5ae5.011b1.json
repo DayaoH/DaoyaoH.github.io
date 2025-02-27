@@ -1,0 +1,1 @@
+{"__type__":"cc.TextAsset","_name":"bullet_config","text":"ID,Name,NodeType,Layer,CollisionType,Speed,AttackType,\r\n0x12000001,通心粉子弹,Bullet,0,0x3001,10,1,\r\n0x12000002,火焰爆炸特效,Bullet,0,0x3001,0,3,\r\n0x12000003,主角子弹,Bullet,0,0x3001,10,1,\r\n"}

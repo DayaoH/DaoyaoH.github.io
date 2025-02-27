@@ -1,0 +1,334 @@
+{
+    "entities": [
+        {
+            "name": "电磁炉",
+            "ID": "0x10000100",
+            "node_type": "Card",
+            "coms": [
+                {
+                    "com_type": 1
+                },
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 4
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 101
+                }
+            ]
+        },
+        {
+            "name": "通心粉",
+            "ID": "0x10000200",
+            "node_type": "Card",
+            "coms": [
+                {
+                    "com_type": 1
+                },
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 4
+                },
+                {
+                    "com_type": 8
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 11
+                },
+                {
+                    "com_type": 101
+                }
+            ]
+        },
+        {
+            "name": "女主角",
+            "ID": "0x1",
+            "node_type": "Card",
+            "coms": [
+                {
+                    "com_type": 1
+                },
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 4
+                },
+                {
+                    "com_type": 8
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 11
+                },
+                {
+                    "com_type": 101
+                }
+            ]
+        },
+        {
+            "name": "火盆",
+            "ID": "0x10000300",
+            "node_type": "Card",
+            "coms": [
+                {
+                    "com_type": 1
+                },
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 8
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 11
+                },
+                {
+                    "com_type": 101
+                }
+            ]
+        },
+        {
+            "name": "饼干墙（矮）",
+            "ID": "0x10000400",
+            "node_type": "Card",
+            "coms": [
+                {
+                    "com_type": 1
+                },
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 101
+                }
+            ]
+        },
+        {
+            "name": "炸弹",
+            "ID": "0x10000500",
+            "node_type": "Card",
+            "coms": [
+                {
+                    "com_type": 1
+                },
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 4
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 11
+                },
+                {
+                    "com_type": 101
+                }
+            ]
+        },
+        {
+            "name": "普通魔术鼠",
+            "ID": "0x11000100",
+            "node_type": "Mouse",
+            "coms": [
+                {
+                    "com_type": 1
+                },
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 3
+                },
+                {
+                    "com_type": 8
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 10
+                },
+                {
+                    "com_type": 11
+                },
+                {
+                    "com_type": 101
+                }
+            ]
+        },
+        {
+            "name": "扑克魔术鼠",
+            "ID": "0x11000110",
+            "node_type": "Mouse",
+            "coms": [
+                {
+                    "com_type": 1
+                },
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 3
+                },
+                {
+                    "com_type": 8
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 10
+                },
+                {
+                    "com_type": 11
+                },
+                {
+                    "com_type": 101
+                },
+                {
+                    "com_type": 102,
+                    "zIndex": 2
+                }
+            ]
+        },
+        {
+            "name": "火焰魔术鼠",
+            "ID": "0x11000120",
+            "node_type": "Mouse",
+            "coms": [
+                {
+                    "com_type": 1
+                },
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 3
+                },
+                {
+                    "com_type": 8
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 10
+                },
+                {
+                    "com_type": 11
+                },
+                {
+                    "com_type": 101
+                },
+                {
+                    "com_type": 102,
+                    "zIndex": 0
+                },
+                {
+                    "com_type": 1001
+                }
+            ]
+        },
+        {
+            "name": "通心粉子弹",
+            "ID": "0x12000001",
+            "node_type": "Bullet",
+            "coms": [
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 3
+                },
+                {
+                    "com_type": 8
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 10
+                },
+                {
+                    "com_type": 11
+                },
+                {
+                    "com_type": 101,
+                    "spine_url": "0x10000200"
+                }
+            ]
+        },
+        {
+            "name": "火焰爆炸特效",
+            "ID": "0x12000002",
+            "node_type": "Bullet",
+            "coms": [
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 10,
+                    "type": 2,
+                    "_desc": "type=2是攻击整个格子内的老鼠"
+                },
+                {
+                    "com_type": 11
+                }
+            ]
+        },
+        {
+            "name": "主角子弹",
+            "ID": "0x12000003",
+            "node_type": "Bullet",
+            "coms": [
+                {
+                    "com_type": 2
+                },
+                {
+                    "com_type": 3
+                },
+                {
+                    "com_type": 8
+                },
+                {
+                    "com_type": 9
+                },
+                {
+                    "com_type": 10
+                },
+                {
+                    "com_type": 11
+                },
+                {
+                    "com_type": 101,
+                    "spine_url": "0x1"
+                }
+            ]
+        }
+    ]
+}
